@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Spell Checker
+	</title>
+</head>
+
+<body>
+	<h1>Spell Checker</h1>
+	<script type="text/javascript" src="scripts/spellchecker.js"></script>
+	<div>
+		<input id="word" type="text">
+		<button onclick="document.getElementById('result').innerHTML 
+			= sc.spellCheck(getElementById('word').value);">
+			Spell Check!
+		</button>
+	</div>
+	<p id="result"></p>
+</body>
+</html>
