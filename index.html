@@ -11,11 +11,15 @@
 	<script type="text/javascript" src="scripts/spellchecker.js"></script>
 	<div>
 		<input id="word" type="text">
-		<button onclick="document.getElementById('result').innerHTML 
-			= sc.spellCheck(getElementById('word').value);">
+		<button onclick="listWordAlignArray('result-list',
+			sc.spellCheck(getElementById('word').value, 10));">
 			Spell Check!
 		</button>
 	</div>
-	<p id="result"></p>
+	<div name="result-container">
+		<label for="result-list">Top 10 Matches:</label>
+		<ol id="result-list">
+		</ol>
+	</div>
 </body>
 </html>
